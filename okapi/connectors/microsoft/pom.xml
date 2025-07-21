@@ -13,12 +13,12 @@
         <dependency>
             <groupId>net.sf.okapi</groupId>
             <artifactId>okapi-core</artifactId>
-            <version>${parent.version}</version>
+            <version>${project.parent.version}</version>
         </dependency>
         <dependency>
             <groupId>net.sf.okapi.lib</groupId>
             <artifactId>okapi-lib-translation</artifactId>
-            <version>${parent.version}</version>
+            <version>${project.parent.version}</version>
         </dependency>
         <!-- HTTP dependencies -->
        <dependency>
@@ -47,5 +47,4 @@
          <scope>test</scope>
        </dependency>
     </dependencies>
-    <version>0.35-VISTATEC</version>
 </project>
