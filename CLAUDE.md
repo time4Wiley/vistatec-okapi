@@ -4,6 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Build and Development Commands
 
+### Prerequisites
+- Java 8 or higher (Java 17 recommended)
+- Maven 3.3.3 or higher (`brew install maven` on macOS)
+- Ant (optional, for distribution builds)
+
 ### Building the Project
 ```bash
 # Full build using Maven
