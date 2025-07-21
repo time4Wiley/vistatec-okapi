@@ -6,8 +6,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Prerequisites
 - Java 8 or higher (Java 17 recommended)
-- Maven 3.3.3 or higher (`brew install maven` on macOS)
+- Maven 3.3.3 or higher (install via SDKMAN: `sdk install maven`)
 - Ant (optional, for distribution builds)
+
+Note: Some modules may have compilation issues with newer JDK versions due to missing javax.annotation dependencies. The core module builds successfully.
 
 ### Building the Project
 ```bash
