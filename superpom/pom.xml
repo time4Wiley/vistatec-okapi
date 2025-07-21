@@ -28,12 +28,12 @@
 	<repositories>
 		<repository>
 			<id>maven-eclipse-repo</id>
-			<url>http://maven-eclipse.github.io/maven</url>
+			<url>https://maven-eclipse.github.io/maven</url>
 		</repository>
 		<repository>
 			<id>okapi-xliff</id>
 			<name>okapi-xliff-repository</name>
-			<url>http://repository-okapi.forge.cloudbees.com/release/</url>
+			<url>https://repository-okapi.forge.cloudbees.com/release/</url>
 			<layout>default</layout>
 		</repository>
 	</repositories>

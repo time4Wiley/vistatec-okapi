@@ -16,7 +16,6 @@
 
 package net.sf.okapi.filters.openxml;
 
-import javax.annotation.Generated;
 import javax.xml.namespace.QName;
 import javax.xml.stream.events.Attribute;
 import javax.xml.stream.events.StartElement;

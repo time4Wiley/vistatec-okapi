@@ -698,10 +698,13 @@ public class LocaleIdTest {
 				new Locale("iW"),
 				Locale.forLanguageTag("Iw")
 		};
-		// No matter how we create a Locale, JDK consistently returns "iw" as string,
-		// and consistent returns "he" as languageTag.
+		// No matter how we create a Locale, JDK consistently returns "iw" as string in older JDKs,
+		// but newer JDKs (JDK 17+) return "he". The languageTag is always "he".
 		for (Locale jdkLocale : jdkLocales) {
-			assertEquals("iw", jdkLocale.toString());
+			// Accept both "iw" (older JDKs) and "he" (newer JDKs)
+			String localeString = jdkLocale.toString();
+			assertTrue("Expected 'iw' or 'he' but got: " + localeString, 
+				"iw".equals(localeString) || "he".equals(localeString));
 			assertEquals("he", jdkLocale.toLanguageTag());
 		}
 		assertEquals("zh_TW_#Hant", Locale.forLanguageTag("zh-hant-tw").toString());
